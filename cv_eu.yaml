@@ -1,0 +1,196 @@
+personal_info:
+  name: MACIEJ KASPRZAK
+  title: Staff Backend Engineer
+  location: Poland (Remote)
+  phone: +48 509 354 580
+  email: contact@makasprzak.pl
+  github: github.com/makasprzak
+
+summary: |
+  Staff Backend Engineer with over 15 years of experience building and evolving
+  backend systems for large-scale, business-critical applications.
+  Strong background in Kotlin and Java with a focus on distributed systems,
+  data-intensive workloads, and long-term system maintainability.
+  Experienced in owning complex components within team-based architectures
+  and collaborating closely with other teams when changes have wider impact.
+
+accomplishments:
+  - title: LARGE-SCALE REPORTING REDESIGN FOR ENTERPRISE VENDOR MANAGEMENT SYSTEM
+    description: |
+      Led the redesign of a large, business-critical reporting component
+      within an enterprise Vendor Management System used by tens of thousands of users.
+      Replaced a synchronous, memory-intensive export mechanism with an asynchronous,
+      streaming-based approach capable of handling large data volumes reliably.
+      Although teams retained ownership of their components, changes to the reporting
+      subsystem affected multiple teams and required close coordination.
+      The solution was delivered incrementally without disruption to existing users
+      and supports flexible report configuration such as column selection,
+      ordering, and renaming.
+    technologies:
+      - Kotlin
+      - Java
+      - Spring
+      - PostgreSQL
+      - Kafka
+      - ActiveMQ
+      - Kubernetes
+      - GraphQL
+
+  - title: TELECOMMUNICATIONS TRACE DATA ANALYTICS PLATFORM
+    description: |
+      Designed and implemented a high-throughput analytics platform for processing
+      telecommunications trace data at scale.
+      Utilised ClickHouse for columnar storage and compression, enabling fast analytical
+      queries over very large datasets.
+      Delivered scalable ingestion pipelines, query APIs, and automated data retention
+      mechanisms to ensure long-term system stability.
+    technologies:
+      - Java
+      - JavaScript
+      - Python
+      - Go
+      - Spring
+      - React
+      - Kubernetes
+      - Apache Spark
+      - Apache Kafka
+      - ClickHouse
+      - MariaDB
+
+  - title: SUPPORT CENTRE CONTENT MANAGEMENT SYSTEM
+    description: |
+      Designed and delivered a content management system for a customer support centre
+      of a large international manufacturer.
+      Enabled secure content authoring and high-performance content delivery using
+      Elasticsearch-backed services and cloud-based infrastructure.
+    technologies:
+      - AWS
+      - Java
+      - Spring Boot
+      - Guice
+      - RxJava
+      - Elasticsearch
+      - MySQL
+      - Docker
+      - Node.js
+
+  - title: BACKEND ARCHITECTURE FOR TRAVEL SEARCH PLATFORM
+    description: |
+      Designed backend architecture for a travel search platform aggregating flights,
+      trains, and bus services across Europe.
+      Introduced a microservices-based design and caching strategies to reduce
+      external service calls and improve response times.
+    technologies:
+      - Java
+      - Guice
+      - RxJava
+      - Kafka
+      - gRPC
+      - Docker
+
+experience:
+  - position: Staff Backend Engineer
+    company: BEELINE
+    location: Remote
+    period: Mar 2022 – Feb 2025
+    description: |
+      Backend engineer responsible for the design and long-term evolution of
+      business-critical components within a large-scale Vendor Management System.
+    achievements:
+      - Owned the design and ongoing evolution of a large reporting and export component.
+      - Reworked reporting workflows from a synchronous, memory-heavy model to an asynchronous, streaming-based approach.
+      - Delivered flexible reporting functionality supporting large exports and configurable report structure.
+      - Collaborated closely with other teams when changes affected shared components or downstream consumers.
+      - Contributed to improvements in system performance, stability, and maintainability.
+    technologies:
+      - Kotlin
+      - Java
+      - Spring
+      - PostgreSQL
+      - Kafka
+      - ActiveMQ
+      - Kubernetes
+      - GraphQL
+      - React
+
+  - position: Senior Full Stack Engineer
+    company: BUNGE
+    location: Remote (Poland)
+    period: Oct 2022 – Present
+    description: |
+      Senior engineer working on an enterprise analytics platform supporting
+      global grain market operations.
+    achievements:
+      - Designed and implemented multidimensional data presentation for analytical use cases.
+      - Delivered performance and usability improvements across the application.
+    technologies:
+      - Java
+      - JavaScript
+      - GraphQL
+      - Spring
+      - Vue.js
+      - AWS ECS
+      - PostgreSQL
+
+  - position: Senior Software Engineer
+    company: NOKIA (via Sii Polska)
+    location: Wrocław, Poland
+    period: 2019 – 2020, 2021 – Sep 2022
+    description: |
+      Senior engineer contributing to the development of a high-performance
+      telecommunications analytics platform.
+    achievements:
+      - Implemented Spark Structured Streaming pipelines for trace data processing.
+      - Designed and maintained ClickHouse-based analytics APIs.
+      - Developed React-based analytical user interfaces.
+      - Implemented automated data retention mechanisms.
+      - Optimised query performance for large datasets.
+    technologies:
+      - Java
+      - JavaScript
+      - Python
+      - Go
+      - Spring
+      - React
+      - Kubernetes
+      - Apache Spark
+      - Apache Kafka
+      - ClickHouse
+
+  - position: Software Engineer
+    company: OCADO
+    location: Wrocław, Poland
+    period: 2020 – 2021
+    description: |
+      Backend engineer working on an internal platform for application deployment
+      and management.
+    achievements:
+      - Implemented Elasticsearch-based fuzzy search functionality.
+      - Introduced contract testing using Pact.
+      - Improved CI/CD pipelines and deployment processes.
+    technologies:
+      - Java
+      - Python
+      - Spring
+      - Elasticsearch
+      - PostgreSQL
+      - AWS
+
+  - position: Software Engineer (Early Career)
+    company: Multiple Companies
+    location: Wrocław, Poland
+    period: 2009 – 2019
+    description: |
+      Early-career roles focused on enterprise Java systems, telecommunications,
+      financial platforms, and distributed backend applications.
+
+education:
+  - degree: MSc in Electronics and Telecommunications
+    institution: Wrocław University of Technology
+    period: 2002 – 2008
+    thesis:
+      title: Measurement of D/A and A/D Audio Converters in a Didactic Laboratory
+      description: |
+        Designed a laboratory system for automated measurement of digital and analog
+        audio converters using industry standards and advanced instrumentation,
+        including custom software for automated testing and analysis.
