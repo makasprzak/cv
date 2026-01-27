@@ -4,6 +4,8 @@ Staff Backend Engineer with 15+ years of experience designing and scaling distri
 
 ---
 
-**CV:** [makasprzak.github.io/cv](https://makasprzak.github.io/cv/)
+**CV:** [makasprzak.github.io/cv](https://makasprzak.github.io/cv/) (auto-detects US/EU based on locale)
+**US Version:** [makasprzak.github.io/cv/?locale=us](https://makasprzak.github.io/cv/?locale=us)
+**EU Version:** [makasprzak.github.io/cv/?locale=eu](https://makasprzak.github.io/cv/?locale=eu)
 **Contact:** contact@makasprzak.pl
 **Location:** Poland (Remote)

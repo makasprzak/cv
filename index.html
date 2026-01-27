@@ -353,15 +353,39 @@
     </div>
 
     <script>
+        function detectLocale() {
+            // Check URL parameter first
+            const urlParams = new URLSearchParams(window.location.search);
+            const localeParam = urlParams.get('locale');
+            if (localeParam) {
+                return localeParam === 'us' ? 'cv_us.yaml' : 'cv_eu.yaml';
+            }
+
+            // Detect from browser locale
+            const userLocale = navigator.language || navigator.userLanguage;
+
+            // US locales -> cv_us.yaml
+            if (userLocale.startsWith('en-US')) {
+                return 'cv_us.yaml';
+            }
+
+            // Default to EU version for European and other locales
+            return 'cv_eu.yaml';
+        }
+
         async function loadCV() {
             try {
-                const response = await fetch('cv.yaml');
+                const cvFile = detectLocale();
+                const response = await fetch(cvFile);
                 const yamlText = await response.text();
                 const data = jsyaml.load(yamlText);
                 renderCV(data);
+
+                // Show which version is loaded
+                console.log(`Loaded CV version: ${cvFile}`);
             } catch (error) {
                 document.getElementById('loading').innerHTML =
-                    'Error loading CV data. Please ensure cv.yaml is in the same directory.';
+                    'Error loading CV data. Please ensure the CV files are in the same directory.';
                 console.error('Error:', error);
             }
         }
