@@ -7,7 +7,7 @@ personal_info:
   github: github.com/makasprzak
 
 summary: |
-  Staff Backend Engineer with 15+ years of experience designing, evolving, and scaling
+  with 15+ years of experience designing, evolving, and scaling
   distributed backend systems used by global enterprise customers.
   Experienced in owning large, business-critical components within team-owned architectures,
   with a strong focus on reliability, scalability, and long-term maintainability.
@@ -93,7 +93,7 @@ experience:
   - position: Staff Backend Engineer
     company: BEELINE
     location: Remote
-    period: Mar 2022 – Feb 2025
+    period: Feb 2023 – Feb 2025
     description: |
       Backend engineer responsible for the design and long-term evolution of
       business-critical components within a large-scale Vendor Management System
@@ -118,7 +118,7 @@ experience:
   - position: Senior Full Stack Engineer
     company: BUNGE
     location: Remote (Poland)
-    period: Oct 2022 – Present
+    period: Oct 2022 – Jan 2023
     description: |
       Senior engineer on an enterprise analytics platform supporting global
       grain market operations.

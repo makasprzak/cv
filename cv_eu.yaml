@@ -1,13 +1,13 @@
 personal_info:
   name: MACIEJ KASPRZAK
-  title: Staff Backend Engineer
+  title: Senior Backend Engineer (Staff-level scope)
   location: Poland (Remote)
   phone: +48 509 354 580
   email: contact@makasprzak.pl
   github: github.com/makasprzak
 
 summary: |
-  Staff Backend Engineer with over 15 years of experience building and evolving
+  with over 15 years of experience building and evolving
   backend systems for large-scale, business-critical applications.
   Strong background in Kotlin and Java with a focus on distributed systems,
   data-intensive workloads, and long-term system maintainability.
@@ -89,10 +89,10 @@ accomplishments:
       - Docker
 
 experience:
-  - position: Staff Backend Engineer
+  - position: Senior Backend Engineer
     company: BEELINE
     location: Remote
-    period: Mar 2022 – Feb 2025
+    period: Feb 2023 – Feb 2025
     description: |
       Backend engineer responsible for the design and long-term evolution of
       business-critical components within a large-scale Vendor Management System.
@@ -116,7 +116,7 @@ experience:
   - position: Senior Full Stack Engineer
     company: BUNGE
     location: Remote (Poland)
-    period: Oct 2022 – Present
+    period: Oct 2022 – Jan 2023
     description: |
       Senior engineer working on an enterprise analytics platform supporting
       global grain market operations.
