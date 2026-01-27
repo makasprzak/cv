@@ -14,58 +14,66 @@
 
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             color: #1F2933;
             line-height: 1.6;
             font-size: 13px;
+            min-height: 100vh;
         }
 
         .container {
             max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            margin: 40px auto;
+            padding: 50px 60px;
             background-color: #ffffff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
         }
 
         /* Header */
         header {
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding: 30px;
+            margin: -50px -60px 35px -60px;
+            background: linear-gradient(135deg, #0D9488 0%, #059669 100%);
+            border-radius: 8px 8px 0 0;
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-            color: #1F2933;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            color: #6B7280;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 12px;
-            margin-bottom: 15px;
         }
 
         .contact-info a {
-            color: #2F5DA8;
+            color: rgba(255, 255, 255, 0.95);
             text-decoration: none;
+            transition: color 0.2s;
         }
 
         .contact-info a:hover {
-            text-decoration: underline;
+            color: #ffffff;
         }
+
 
         /* Summary */
         .summary {
             margin-bottom: 35px;
-            padding: 15px;
-            background-color: #fafafa;
-            border-left: 3px solid #2F5DA8;
+            padding: 20px 24px;
+            background: linear-gradient(135deg, #f0fdfa 0%, #f9fafb 100%);
+            border-left: 4px solid #0D9488;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.08);
         }
 
         /* Section Headers */
@@ -75,16 +83,36 @@
             letter-spacing: 3px;
             margin-bottom: 20px;
             margin-top: 35px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e0e0e0;
-            color: #1F2933;
+            padding: 10px 0;
+            color: #0D9488;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #0D9488 0%, #059669 100%);
+            border-radius: 2px;
         }
 
         /* Accomplishments */
         .accomplishment {
             margin-bottom: 25px;
-            padding-left: 15px;
-            border-left: 2px solid #e8e8e8;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #0D9488;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .accomplishment:hover {
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.12);
+            transform: translateX(2px);
         }
 
         .accomplishment h3 {
@@ -102,9 +130,18 @@
 
         /* Experience */
         .job {
-            margin-bottom: 30px;
-            padding-left: 15px;
-            border-left: 2px solid #e8e8e8;
+            margin-bottom: 25px;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: border-left-color 0.2s, box-shadow 0.2s;
+        }
+
+        .job:hover {
+            border-left-color: #0D9488;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
         }
 
         .job-header {
@@ -119,7 +156,7 @@
 
         .job-company {
             font-weight: bold;
-            color: #2F5DA8;
+            color: #0D9488;
         }
 
         .job-meta {
@@ -146,7 +183,7 @@
         }
 
         ul li::marker {
-            color: #2F5DA8;
+            color: #0D9488;
         }
 
         /* Technologies */
@@ -158,18 +195,34 @@
         }
 
         .tech-tag {
-            background-color: #f0f0f0;
-            color: #6B7280;
-            padding: 3px 8px;
+            background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
+            color: #0D9488;
+            padding: 4px 10px;
             font-size: 11px;
-            border: 1px solid #d8d8d8;
+            border: 1px solid #99f6e4;
+            border-radius: 4px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .tech-tag:hover {
+            background: linear-gradient(135deg, #ccfbf1 0%, #d1fae5 100%);
+            transform: translateY(-1px);
         }
 
         /* Education */
         .education-item {
             margin-bottom: 20px;
-            padding-left: 15px;
-            border-left: 2px solid #e8e8e8;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: border-left-color 0.2s, box-shadow 0.2s;
+        }
+
+        .education-item:hover {
+            border-left-color: #0D9488;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
         }
 
         .degree {
@@ -205,30 +258,48 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            body {
+                margin: 0;
+            }
+
             .container {
-                padding: 20px 15px;
+                margin: 0;
+                padding: 30px 20px;
+                border-radius: 0;
+            }
+
+            header {
+                margin: -30px -20px 25px -20px;
+                padding: 25px 20px;
             }
 
             h1 {
-                font-size: 22px;
+                font-size: 24px;
+                letter-spacing: 1px;
             }
 
-            .contact-info {
-                flex-direction: column;
-                gap: 8px;
+            .accomplishment, .job, .education-item {
+                padding: 15px;
             }
         }
 
         @media print {
             body {
-                background-color: white;
+                background: white;
                 font-size: 11px;
             }
 
             .container {
                 box-shadow: none;
                 max-width: 100%;
-                padding: 0;
+                padding: 30px;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            header {
+                margin: -30px -30px 25px -30px;
+                padding: 20px 30px;
             }
 
             h1 {
@@ -242,6 +313,7 @@
 
             .job, .accomplishment, .education-item {
                 page-break-inside: avoid;
+                box-shadow: none;
             }
 
             .job-header {
@@ -249,19 +321,16 @@
             }
 
             .tech-tag {
-                border: 1px solid #999;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
 
             .summary {
                 page-break-after: avoid;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
             }
 
             a {
-                color: #2F5DA8;
+                color: rgba(255, 255, 255, 0.95);
                 text-decoration: none;
             }
 
@@ -269,6 +338,10 @@
             * {
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+            }
+
+            .accomplishment:hover, .job:hover, .education-item:hover {
+                transform: none;
             }
         }
     </style>
@@ -282,13 +355,13 @@
     <script>
         async function loadCV() {
             try {
-                const response = await fetch('cv.yaml');
+                const response = await fetch('cv_us.yaml');
                 const yamlText = await response.text();
                 const data = jsyaml.load(yamlText);
                 renderCV(data);
             } catch (error) {
                 document.getElementById('loading').innerHTML =
-                    'Error loading CV data. Please ensure cv.yaml is in the same directory.';
+                    'Error loading CV data. Please ensure cv_us.yaml is in the same directory.';
                 console.error('Error:', error);
             }
         }
@@ -356,12 +429,15 @@
                     html += '</ul>';
                 }
 
-                html += `
+                if (job.technologies && job.technologies.length > 0) {
+                    html += `
                         <div class="technologies">
                             ${job.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                         </div>
-                    </div>
-                `;
+                    `;
+                }
+
+                html += '</div>';
             });
 
             // Education

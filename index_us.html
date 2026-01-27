@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maciej Kasprzak - CV</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #1F2933;
+            line-height: 1.6;
+            font-size: 13px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px 60px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        header {
+            padding: 30px;
+            margin: -50px -60px 35px -60px;
+            background: linear-gradient(135deg, #0D9488 0%, #059669 100%);
+            border-radius: 8px 8px 0 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 12px;
+        }
+
+        .contact-info a {
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #ffffff;
+        }
+
+
+        /* Summary */
+        .summary {
+            margin-bottom: 35px;
+            padding: 20px 24px;
+            background: linear-gradient(135deg, #f0fdfa 0%, #f9fafb 100%);
+            border-left: 4px solid #0D9488;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.08);
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            margin-top: 35px;
+            padding: 10px 0;
+            color: #0D9488;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #0D9488 0%, #059669 100%);
+            border-radius: 2px;
+        }
+
+        /* Accomplishments */
+        .accomplishment {
+            margin-bottom: 25px;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #0D9488;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .accomplishment:hover {
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.12);
+            transform: translateX(2px);
+        }
+
+        .accomplishment h3 {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1F2933;
+        }
+
+        .accomplishment p {
+            margin-bottom: 10px;
+            text-align: justify;
+            color: #1F2933;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 25px;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: border-left-color 0.2s, box-shadow 0.2s;
+        }
+
+        .job:hover {
+            border-left-color: #0D9488;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
+        }
+
+        .job-header {
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #1F2933;
+        }
+
+        .job-company {
+            font-weight: bold;
+            color: #0D9488;
+        }
+
+        .job-meta {
+            color: #6B7280;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .job-description {
+            margin-bottom: 8px;
+            text-align: justify;
+            color: #1F2933;
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+            color: #1F2933;
+        }
+
+        ul li::marker {
+            color: #0D9488;
+        }
+
+        /* Technologies */
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tech-tag {
+            background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
+            color: #0D9488;
+            padding: 4px 10px;
+            font-size: 11px;
+            border: 1px solid #99f6e4;
+            border-radius: 4px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .tech-tag:hover {
+            background: linear-gradient(135deg, #ccfbf1 0%, #d1fae5 100%);
+            transform: translateY(-1px);
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+            border-left: 3px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: border-left-color 0.2s, box-shadow 0.2s;
+        }
+
+        .education-item:hover {
+            border-left-color: #0D9488;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
+        }
+
+        .degree {
+            font-weight: bold;
+            font-size: 13px;
+            color: #1F2933;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            color: #6B7280;
+            margin-bottom: 5px;
+        }
+
+        .thesis-title {
+            font-style: italic;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            color: #1F2933;
+        }
+
+        .thesis-description {
+            text-align: justify;
+            color: #1F2933;
+        }
+
+        /* Loading state */
+        #loading {
+            text-align: center;
+            padding: 40px;
+            color: #6B7280;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                margin: 0;
+            }
+
+            .container {
+                margin: 0;
+                padding: 30px 20px;
+                border-radius: 0;
+            }
+
+            header {
+                margin: -30px -20px 25px -20px;
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
+            .accomplishment, .job, .education-item {
+                padding: 15px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                font-size: 11px;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 30px;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            header {
+                margin: -30px -30px 25px -30px;
+                padding: 20px 30px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 14px;
+                page-break-after: avoid;
+            }
+
+            .job, .accomplishment, .education-item {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+
+            .job-header {
+                page-break-after: avoid;
+            }
+
+            .tech-tag {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .summary {
+                page-break-after: avoid;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 0.95);
+                text-decoration: none;
+            }
+
+            /* Ensure colors are preserved in print */
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .accomplishment:hover, .job:hover, .education-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="loading">Loading CV...</div>
+        <div id="content" style="display: none;"></div>
+    </div>
+
+    <script>
+        async function loadCV() {
+            try {
+                const response = await fetch('cv_us.yaml');
+                const yamlText = await response.text();
+                const data = jsyaml.load(yamlText);
+                renderCV(data);
+            } catch (error) {
+                document.getElementById('loading').innerHTML =
+                    'Error loading CV data. Please ensure cv_us.yaml is in the same directory.';
+                console.error('Error:', error);
+            }
+        }
+
+        function renderCV(data) {
+            const content = document.getElementById('content');
+
+            let html = `
+                <header>
+                    <h1>${data.personal_info.name}</h1>
+                    <div class="contact-info">
+                        <span>${data.personal_info.phone}</span>
+                        <span><a href="mailto:${data.personal_info.email}">${data.personal_info.email}</a></span>
+                        <span><a href="https://${data.personal_info.github}" target="_blank">${data.personal_info.github}</a></span>
+                    </div>
+                </header>
+
+                <div class="summary">
+                    <strong>${data.personal_info.title}</strong>
+                    ${data.summary.trim()}
+                </div>
+
+                <h2>SELECTED ACCOMPLISHMENTS</h2>
+            `;
+
+            // Accomplishments
+            const romanNumerals = ['I', 'II', 'III', 'IV'];
+            data.accomplishments.forEach((acc, index) => {
+                html += `
+                    <div class="accomplishment">
+                        <h3>${romanNumerals[index]}. ${acc.title}</h3>
+                        <p>${acc.description.trim()}</p>
+                        <div class="technologies">
+                            ${acc.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Experience
+            html += '<h2>EXPERIENCE</h2>';
+            data.experience.forEach(job => {
+                html += `
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">
+                                ${job.position}${job.responsibilities_note ? ' (' + job.responsibilities_note + ')' : ''} –
+                                <span class="job-company">${job.company}</span>
+                            </div>
+                            <div class="job-meta">
+                                ${job.period} | ${job.location}
+                            </div>
+                        </div>
+                `;
+
+                if (job.description) {
+                    html += `<div class="job-description">${job.description.trim()}</div>`;
+                }
+
+                if (job.achievements && job.achievements.length > 0) {
+                    html += '<ul>';
+                    job.achievements.forEach(achievement => {
+                        html += `<li>${achievement}</li>`;
+                    });
+                    html += '</ul>';
+                }
+
+                if (job.technologies && job.technologies.length > 0) {
+                    html += `
+                        <div class="technologies">
+                            ${job.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        </div>
+                    `;
+                }
+
+                html += '</div>';
+            });
+
+            // Education
+            html += '<h2>EDUCATION</h2>';
+            data.education.forEach(edu => {
+                html += `
+                    <div class="education-item">
+                        <div class="degree">${edu.degree}</div>
+                        <div class="institution">${edu.institution}</div>
+                        <div class="job-meta">${edu.period}</div>
+                `;
+
+                if (edu.thesis) {
+                    html += `
+                        <div class="thesis-title">Masters Thesis: "${edu.thesis.title}"</div>
+                        <div class="thesis-description">${edu.thesis.description.trim()}</div>
+                    `;
+                }
+
+                html += '</div>';
+            });
+
+            content.innerHTML = html;
+            document.getElementById('loading').style.display = 'none';
+            content.style.display = 'block';
+        }
+
+        loadCV();
+    </script>
+</body>
+</html>

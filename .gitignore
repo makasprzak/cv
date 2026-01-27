@@ -1,0 +1,19 @@
+# Word temporary files
+~$*.docx
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Node modules (if any)
+node_modules/
+
+# Original Word documents (optional - uncomment if you don't want to track these)
+# *.docx
+
+# Images (optional)
+# *.jpg
+# *.png
