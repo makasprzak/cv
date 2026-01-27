@@ -1,6 +1,6 @@
 personal_info:
   name: MACIEJ KASPRZAK
-  title: Staff Backend Engineer (Distributed Systems & Platform)
+  title: Staff Backend Engineer (Distributed Systems & Data Platforms)
   location: Poland (Remote)
   phone: +48 509 354 580
   email: contact@makasprzak.pl
@@ -8,22 +8,25 @@ personal_info:
 
 summary: |
   Staff Backend Engineer with 15+ years of experience designing, evolving, and scaling
-  distributed systems used by global enterprise customers.
-  Proven technical owner of complex, cross-team initiatives, specializing in
-  event-driven architectures, data-intensive platforms, and cloud-native systems.
-  Strong Kotlin/Java background with a focus on reliability, scalability,
-  and long-term maintainability.
+  distributed backend systems used by global enterprise customers.
+  Experienced in owning large, business-critical components within team-owned architectures,
+  with a strong focus on reliability, scalability, and long-term maintainability.
+  Specialized in Kotlin/Java ecosystems, event-driven systems, and data-intensive platforms.
 
 accomplishments:
-  - title: PLATFORM-WIDE REPORTING REDESIGN FOR GLOBAL VMS
+  - title: LARGE-SCALE REPORTING REDESIGN FOR GLOBAL VMS
     description: |
-      Owned the technical vision and execution of a platform-wide reporting subsystem
-      for a global Vendor Management System serving 10k–100k+ users, including Fortune 500 clients.
-      Replaced a memory-heavy synchronous export model with a resilient, asynchronous,
-      streaming-based architecture capable of handling large-scale data exports with minimal
-      memory footprint. Defined extensible report configuration (dynamic columns, ordering,
-      renaming) and delivered the solution incrementally with zero customer disruption.
-      Established the new design as a long-term platform standard.
+      Owned the design and evolution of a large, business-critical reporting component
+      within a global Vendor Management System used by enterprise customers
+      (10k–100k+ users, including Fortune 500 clients).
+      Replaced a memory-heavy synchronous export mechanism with an asynchronous,
+      streaming-based design capable of handling large data volumes reliably
+      with a minimal memory footprint.
+      While team ownership boundaries remained intact, changes to the reporting component
+      had cross-team impact and required careful coordination.
+      The solution was delivered incrementally with zero customer disruption and
+      supports flexible report configuration including column selection,
+      reordering, and renaming.
     technologies:
       - Kotlin
       - Java
@@ -37,9 +40,11 @@ accomplishments:
   - title: HIGH-THROUGHPUT TELECOMMUNICATIONS TRACE ANALYTICS PLATFORM
     description: |
       Designed and built a high-throughput analytics platform processing thousands of
-      telecommunications trace events per second. Leveraged ClickHouse for columnar storage
-      and compression, enabling sub-second analytical queries over tens of millions of records.
-      Delivered scalable ingestion pipelines, efficient querying, and reliable long-term storage.
+      telecommunications trace events per second.
+      Leveraged ClickHouse for columnar storage and compression, enabling fast analytical
+      queries over tens of millions of records.
+      Implemented scalable ingestion pipelines, efficient querying APIs,
+      and automated data lifecycle management.
     technologies:
       - Java
       - JavaScript
@@ -55,9 +60,10 @@ accomplishments:
 
   - title: ENTERPRISE SUPPORT CENTER CMS FOR US-BASED MANUFACTURER
     description: |
-      Designed and delivered a scalable content management platform for a US-based
-      enterprise manufacturer. Enabled secure content authoring and high-performance
-      content delivery using Elasticsearch-backed APIs and cloud-native infrastructure.
+      Designed and delivered a scalable content management system for a US-based
+      enterprise manufacturer.
+      Enabled secure content authoring and high-performance content delivery using
+      Elasticsearch-backed APIs and cloud-native infrastructure.
     technologies:
       - AWS
       - Java
@@ -73,8 +79,8 @@ accomplishments:
     description: |
       Defined the backend architecture for a multi-provider travel search platform
       aggregating flights, trains, and bus services across Europe.
-      Introduced microservices-based design, advanced caching strategies,
-      and ML-assisted optimization to reduce external API load and improve response times.
+      Introduced microservices-based design and advanced caching strategies
+      to reduce external API load and improve response times.
     technologies:
       - Java
       - Guice
@@ -84,19 +90,20 @@ accomplishments:
       - Docker
 
 experience:
-  - position: STAFF BACKEND ENGINEER / TECHNICAL OWNER
+  - position: Staff Backend Engineer
     company: BEELINE
     location: Remote
     period: Mar 2022 – Feb 2025
     description: |
-      Technical owner for critical backend systems in a large-scale Vendor Management
-      platform used by global enterprise customers.
+      Backend engineer responsible for the design and long-term evolution of
+      business-critical components within a large-scale Vendor Management System
+      serving global enterprise customers.
     achievements:
-      - Owned cross-team redesign of reporting and export capabilities, defining long-term technical direction.
-      - Introduced an asynchronous, streaming-based export architecture adopted as a platform standard.
-      - Designed an event-driven anomaly detection framework with configurable business rules.
-      - Served as escalation point for complex architectural decisions impacting multiple teams.
-      - Drove performance, stability, and operability improvements across backend services.
+      - Owned the design and evolution of a large reporting and export component used across multiple teams.
+      - Redesigned reporting workflows from a synchronous, memory-intensive model to an asynchronous, streaming-based approach.
+      - Delivered a flexible reporting solution supporting dynamic column configuration and large data exports.
+      - Worked closely with other teams when changes affected shared components or downstream consumers.
+      - Contributed to overall system performance, stability, and maintainability through targeted architectural improvements.
     technologies:
       - Kotlin
       - Java
@@ -108,15 +115,16 @@ experience:
       - GraphQL
       - React
 
-  - position: SENIOR FULL STACK ENGINEER
+  - position: Senior Full Stack Engineer
     company: BUNGE
     location: Remote (Poland)
     period: Oct 2022 – Present
     description: |
-      Senior engineer on an enterprise analytics platform supporting global grain market operations.
+      Senior engineer on an enterprise analytics platform supporting global
+      grain market operations.
     achievements:
-      - Designed flexible multidimensional data presentation systems for analytical workflows.
-      - Delivered performance, usability, and reliability improvements across the platform.
+      - Designed flexible multidimensional data presentation solutions for analytical workflows.
+      - Implemented performance and usability improvements across the platform.
     technologies:
       - Java
       - JavaScript
@@ -126,64 +134,5 @@ experience:
       - AWS ECS
       - PostgreSQL
 
-  - position: SENIOR SOFTWARE ENGINEER
+  - position: Senior Software Engineer
     company: NOKIA (via Sii Polska)
-    location: Wrocław, Poland
-    period: 2019 – 2020, 2021 – Sep 2022
-    description: |
-      Core contributor to a high-performance telecommunications analytics platform.
-    achievements:
-      - Built Spark Structured Streaming pipelines for large-scale trace processing.
-      - Designed ClickHouse-based analytics APIs supporting near real-time queries.
-      - Delivered React-based analytics user interfaces.
-      - Implemented automated data lifecycle management to control storage growth.
-      - Optimized analytical queries for large-scale datasets.
-    technologies:
-      - Java
-      - JavaScript
-      - Python
-      - Go
-      - Spring
-      - React
-      - Kubernetes
-      - Apache Spark
-      - Apache Kafka
-      - ClickHouse
-
-  - position: SOFTWARE ENGINEER
-    company: OCADO
-    location: Wrocław, Poland
-    period: 2020 – 2021
-    description: |
-      Backend engineer on an internal platform enabling secure, standardized application deployment.
-    achievements:
-      - Implemented Elasticsearch-based fuzzy search capabilities.
-      - Introduced contract testing using Pact.
-      - Improved CI/CD pipelines and deployment automation.
-    technologies:
-      - Java
-      - Python
-      - Spring
-      - Elasticsearch
-      - PostgreSQL
-      - AWS
-
-  - position: SOFTWARE ENGINEER (EARLY CAREER)
-    company: Multiple Companies (Tieto, Eurostat, Credit Suisse, PGS Software)
-    location: Wrocław, Poland
-    period: 2009 – 2019
-    description: |
-      Early-career roles focused on enterprise Java systems, financial platforms,
-      telecommunications systems, and distributed backend applications.
-
-education:
-  - degree: MSc in Electronics and Telecommunications
-    institution: Wrocław University of Technology
-    period: 2002 – 2008
-    thesis:
-      title: Measurement of D/A and A/D Audio Converters in a Didactic Laboratory
-      description: |
-        Designed a laboratory system for automated measurement of digital and analog
-        audio converters using industry standards and advanced instrumentation,
-        including custom software for automated testing and analysis.
-
