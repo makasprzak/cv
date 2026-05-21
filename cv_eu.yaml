@@ -176,13 +176,207 @@ experience:
       - PostgreSQL
       - AWS
 
-  - position: Software Engineer (Early Career)
-    company: Multiple Companies
+  - position: Ruby on Rails Developer
+    company: SOFOMO (www.primexinc.com)
     location: Wrocław, Poland
-    period: 2009 – 2019
+    period: 2018 – 2019
     description: |
-      Early-career roles focused on enterprise Java systems, telecommunications,
-      financial platforms, and distributed backend applications.
+      A senior back-end developer working with a team of back-end and front-end developers
+      to maintain and develop an Internet of Things platform, analysing functional requirements,
+      investigating performance problems, proposing and implementing improvements.
+    achievements:
+      - Implemented support for new family of devices including remote configuration management and state monitoring
+      - Implemented Python utility to simulate devices that communicate with the system to improve testing
+      - Optimized sensor readings processing pipeline completely removing holdups that previously have been occurring multiple times per day
+      - Analysed sensor readings processing algorithm implementation with use of profiling tools and proposed performance improvements estimated to provide more than 60% performance gain.
+      - Helped the team starting using Scrum Framework by running a Scrum training at client office in Wisconsin and continuously advising on proper Scrum usage
+    technologies:
+      - Ruby 2.1
+      - Rails 4.1
+      - Python
+      - Java
+      - Docker
+      - PostgreSQL
+      - AWS DynamoDB
+      - AWS Kinesis
+      - AWS SQS
+
+  - position: Java Developer
+    company: SOFOMO (CLIENT IS A LEADING BEVERAGES MANUFACTURER)
+    location: Wrocław, Poland
+    period: 2018
+    description: |
+      A senior back-end developer and team technical leader responsible for designing complete
+      end-to-end architecture, analysing functional requirements, helping the Product Owner
+      build and maintain the Product Backlog, implementing majority of the back-end code and
+      coordinating work of the rest of the team that includes back-end and front-end developers
+      and AWS specialists.
+    achievements:
+      - Designed complete system architecture. Responsibilities include choosing tools and services best suited for the requirements.
+      - Provided technical documentation and estimated the work needed to complete the system implementation.
+      - Implemented majority of the back-end code that is mostly Spring Boot based, but includes also Google Guice based or Node.js components.
+      - Provided high level of automated test coverage. Because of microservice nature of the architecture, these are mostly integration tests utilising Docker to virtualize the system in local environment.
+      - Worked with AWS specialist to ensure proper solution deployment into AWS environment and to build successful CI and CD pipelines.
+    technologies:
+      - AWS
+      - Java 8
+      - Spring Boot
+      - Guice
+      - RxJava
+      - Elasticsearch
+      - MySQL
+      - Docker
+      - Node.js
+
+  - position: Java Developer
+    company: PGS SOFTWARE (CLIENT IS A YELLOW PAGES COMPANY)
+    location: Wrocław, Poland
+    period: 2017
+    description: |
+      A senior back-end developer and team technical leader working with a team of Java
+      Developers to create a Chat Bot functionality for a yellow pages company located in UK.
+    achievements:
+      - Designed AWS architecture for the solution
+      - Implemented Dialogflow (formerly API.AI) Fulfillment Service
+      - Integrated Facebook chat, Twitter and Amazon Alexa.
+      - Built usage analytics module able to track the bot ability to correctly address user intents.
+      - Handled the part-time Scrum Master role for the team.
+    technologies:
+      - Java 8
+      - Docker
+      - Spring Boot
+      - Elasticsearch
+      - Node.js
+
+  - position: Java Developer
+    company: PGS SOFTWARE (CLIENT IS A POPULAR TRAVEL SITE)
+    location: Wrocław, Poland
+    period: 2015 – 2016
+    description: |
+      A senior back-end developer responsible for rewriting the entire application and
+      maintaining the back-end for the old legacy application.
+    achievements:
+      - Redesigned the entire back-end architecture. Responsibilities include defining the various back-end components and the boundaries of each component.
+      - Implemented the base layer code for the application rewrite. This work handles users search requests, passes them onto external providers and collects and consolidates the results.
+      - Created an end-to-end acceptance testing framework using Cucumber and Docker.
+      - Implemented a component for the legacy system that is responsible for filling the gaps between user departure/arrival points and actual departure/arrival points of a train, bus or flight.
+      - Worked towards increasing the general quality of the legacy system.
+      - Handled the part-time Scrum Master role for the team.
+    technologies:
+      - Java 8
+      - Guice
+      - RxJava
+      - Kafka
+      - gRPC
+      - Docker
+      - Spring
+      - MySQL
+      - Couchbase
+      - Elasticsearch
+      - Apache Lucene
+
+  - position: Java Developer
+    company: PGS SOFTWARE (CLIENT SELLS FINANCIAL SOFTWARE)
+    location: Wrocław, Poland
+    period: 2014 – 2015
+    description: Developed and maintained a large system for a financial software product.
+    achievements:
+      - Investigated and solved multiple problems in an Apache Camel/jBPM based component that is responsible for processing SwiftNet events.
+      - Improved unit test coverage in multiple modules.
+      - Performed root cause analysis and solved many problems in a Hibernate/Spring/ JSF based application responsible for investment funds management.
+      - Implemented a module responsible for processing of automated payments including both back-end and front-end layers (AngularJS, CXF, Spring, Hibernate).
+    technologies:
+      - Java
+      - JavaScript
+      - Sybase
+      - MySQL
+      - Apache Camel
+      - jBPM
+      - Spring
+      - JSF
+      - AngularJS
+      - Hibernate
+      - ActiveMQ
+
+  - position: Java Developer
+    company: PGS SOFTWARE (CLIENT IS AN ADVERTISING PLATFORM)
+    location: Wrocław, Poland
+    period: 2014
+    description: |
+      Worked as part of an engineering team that was responsible for developing an online
+      advertising solution hosted in Amazon Web Services.
+    achievements:
+      - Created a CMS component exposing Restful API for a web based front-end using Spring (MVC, Data-JPA) and PostgreSQL
+      - Created a service responsible for providing statistical information on application usage using Apache Storm and Elasticsearch.
+      - Helped develop a component exposing Restful API for end-user applications (Android, iOS, desktop) using Spring and Solr.
+    technologies:
+      - Java 8
+      - Spring Boot
+      - JPA
+      - RxJava
+      - Apache Storm
+      - PostgreSQL
+      - Solr
+      - Elasticsearch
+      - RabbitMQ
+      - Amazon Web Services
+
+  - position: Java Developer
+    company: CREDIT SUISSE (via Luxoft)
+    location: Wrocław, Poland
+    period: Dec 2013 – Feb 2014
+    description: |
+      Worked as part of a distributed team (New York, London, Wrocław - Poland, Pune - India & Singapore)
+      on a small component of Credit Suisse's Market Risk platform.
+    achievements:
+      - Implemented a service that exposes the SOAP API for a Silverlight based frontend, using EJB, JPA, JAXB, JAX-WS, WebLogic and Oracle
+    technologies:
+      - Java
+      - Oracle DB
+      - Spring
+      - OBPM
+      - JPA
+      - JAX-WS
+      - WebLogic
+
+  - position: Java Developer
+    company: EUROSTAT (via Atos)
+    location: Wrocław, Poland
+    period: Feb – Nov 2013
+    description: |
+      Developed and maintained multiple statistical data applications for Eurostat,
+      the statistical office of the European Union
+    achievements:
+      - Developed a Swing based desktop application used for statistical data management.
+      - Prepared effort estimations for a Struts based web application that is used for exposing public Eurostat data.
+    technologies:
+      - Java
+      - Oracle DB
+      - Swing
+      - Guice
+      - Spring
+      - Struts
+      - WebLogic
+
+  - position: Java Developer
+    company: TIETO, NOKIA SIEMENS NETWORKS
+    location: Wrocław, Poland
+    period: 2009 – 2013
+    description: |
+      Worked as part of multi-scrum team responsible for maintaining and developing a mobile
+      network configuration management system.
+    achievements:
+      - Developed a large distributed system utilizing the following technologies WebSphere, Oracle, EJB, Swing and CORBA.
+      - Resolved a major issue that allowed an important South American customer to upgrade their network software.
+      - Served as Scrum Master for a team of developers. Moderated Scrum sessions and ensured that all deliverables were completed on time.
+    technologies:
+      - Java
+      - Python
+      - Oracle DB
+      - EJB 2.0
+      - Swing
+      - Spring
+      - WebLogic
 
 education:
   - degree: MSc in Electronics and Telecommunications
