@@ -90,27 +90,33 @@ accomplishments:
       - Docker
 
 experience:
-  - position: SENIOR SOFTWARE ENGINEER / CLOUD MIGRATION CONSULTANT
-    company: EQUINIX (CONTRACT)
+  - position: Senior Backend Engineer
+    company: Equinix
     location: Remote
-    period: Apr 2026 – Present
-    description: Senior software engineer contributing to the migration of a large-scale telemetry data collection platform
-      from on-premise infrastructure to AWS. Focused primarily on migrating and modernizing Apache Storm-based data processing
-      components while also contributing to Kubernetes-deployed services, Apache Spark and Flink workloads, and Cassandra-related
-      changes within a complex distributed ecosystem.
+    period: April 2026 - Current
+    description: |
+      Senior Engineer maintaining a global telemetry platform for data centers. 
+      Hired first as a member of the AWS migration task force team, later assigned 
+      to a product team as a long term contractor.
     achievements:
-      - Migrating Apache Storm-based telemetry processing workloads from on-prem infrastructure to AWS.
-      - Contributing to modernization and cloud migration of Kubernetes-deployed services and distributed data processing components.
-      - Working across a heterogeneous distributed data platform involving Apache Storm, Spark, Flink and Cassandra.
-      - Collaborating within a large Java-based codebase to ensure reliable migration and operational continuity.
+      - Migrated 100+ Apache Storm based data pipelines distributed accross 10+ Storm clusters from on-prem to EC2 and improved the CD pipelines
+      - Created Terraform based IaC automation for Apache Storm clusters
+      - Worked on moving the data pipelines from Apache Storm/Cassandra based architecture to Apache Flink/Spring Boot/Bigquery based architecture
+      - Introduced a team shared knowledge base, based on Open Knowledge Format, to improve LLM usage efficiency
     technologies:
       - Java
-      - AWS
-      - Kubernetes
+      - Spring
       - Apache Storm
-      - Apache Spark
-      - Apache Flink
-      - Cassandra
+      - Apache Cassandra
+      - Oracle DB
+      - PostgreSQL
+      - BigQuery
+      - Apache Kafka
+      - Kubernetes
+      - AWS
+      - Terraform
+      - Ansible
+
   - position: Staff Backend Engineer
     company: BEELINE
     location: Remote

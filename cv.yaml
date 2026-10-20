@@ -84,6 +84,27 @@ accomplishments:
       - Docker
 
 experience:
+  - position: SENIOR SOFTWARE ENGINEER / CLOUD MIGRATION CONSULTANT
+    company: EQUINIX (CONTRACT)
+    location: Remote
+    period: Apr 2026 – Present
+    description: Senior software engineer contributing to the migration of a large-scale telemetry data collection platform
+      from on-premise infrastructure to AWS. Focused primarily on migrating and modernizing Apache Storm-based data processing
+      components while also contributing to Kubernetes-deployed services, Apache Spark and Flink workloads, and Cassandra-related
+      changes within a complex distributed ecosystem.
+    achievements:
+      - Migrating Apache Storm-based telemetry processing workloads from on-prem infrastructure to AWS.
+      - Contributing to modernization and cloud migration of Kubernetes-deployed services and distributed data processing components.
+      - Working across a heterogeneous distributed data platform involving Apache Storm, Spark, Flink and Cassandra.
+      - Collaborating within a large Java-based codebase to ensure reliable migration and operational continuity.
+    technologies:
+      - Java
+      - AWS
+      - Kubernetes
+      - Apache Storm
+      - Apache Spark
+      - Apache Flink
+      - Cassandra
   - position: SENIOR BACK-END DEVELOPER
     company: BEELINE
     location: Remote

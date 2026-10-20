@@ -1,6 +1,6 @@
 personal_info:
   name: MACIEJ KASPRZAK
-  title: Senior Backend Engineer (Staff-level scope)
+  title: Senior Backend Engineer
   location: Poland (Remote)
   phone: +48 509 354 580
   email: contact@makasprzak.pl
@@ -15,27 +15,6 @@ summary: |
   and collaborating closely with other teams when changes have wider impact.
 
 accomplishments:
-  - title: LARGE-SCALE REPORTING REDESIGN FOR ENTERPRISE VENDOR MANAGEMENT SYSTEM
-    description: |
-      Led the redesign of a large, business-critical reporting component
-      within an enterprise Vendor Management System used by tens of thousands of users.
-      Replaced a synchronous, memory-intensive export mechanism with an asynchronous,
-      streaming-based approach capable of handling large data volumes reliably.
-      Although teams retained ownership of their components, changes to the reporting
-      subsystem affected multiple teams and required close coordination.
-      The solution was delivered incrementally without disruption to existing users
-      and supports flexible report configuration such as column selection,
-      ordering, and renaming.
-    technologies:
-      - Kotlin
-      - Java
-      - Spring
-      - PostgreSQL
-      - Kafka
-      - ActiveMQ
-      - Kubernetes
-      - GraphQL
-
   - title: TELECOMMUNICATIONS TRACE DATA ANALYTICS PLATFORM
     description: |
       Designed and implemented a high-throughput analytics platform for processing
@@ -56,6 +35,27 @@ accomplishments:
       - Apache Kafka
       - ClickHouse
       - MariaDB
+
+  - title: LARGE-SCALE REPORTING REDESIGN FOR ENTERPRISE VENDOR MANAGEMENT SYSTEM
+    description: |
+      Led the redesign of a large, business-critical reporting component
+      within an enterprise Vendor Management System used by tens of thousands of users.
+      Replaced a synchronous, memory-intensive export mechanism with an asynchronous,
+      streaming-based approach capable of handling large data volumes reliably.
+      Although teams retained ownership of their components, changes to the reporting
+      subsystem affected multiple teams and required close coordination.
+      The solution was delivered incrementally without disruption to existing users
+      and supports flexible report configuration such as column selection,
+      ordering, and renaming.
+    technologies:
+      - Kotlin
+      - Java
+      - Spring
+      - PostgreSQL
+      - Kafka
+      - ActiveMQ
+      - Kubernetes
+      - GraphQL
 
   - title: SUPPORT CENTRE CONTENT MANAGEMENT SYSTEM
     description: |
@@ -89,6 +89,33 @@ accomplishments:
       - Docker
 
 experience:
+  - position: Senior Backend Engineer
+    company: Equinix
+    location: Remote
+    period: April 2026 - Current
+    description: |
+      Senior Engineer maintaining a global telemetry platform for data centers. 
+      Hired first as a member of the AWS migration task force team, later assigned 
+      to a product team as a long term contractor.
+    achievements:
+      - Migrated 100+ Apache Storm based data pipelines distributed accross 10+ Storm clusters from on-prem to EC2 and improved the CD pipelines
+      - Created Terraform based IaC automation for Apache Storm clusters
+      - Worked on moving the data pipelines from Apache Storm/Cassandra based architecture to Apache Flink/Spring Boot/Bigquery based architecture
+      - Introduced a team shared knowledge base, based on Open Knowledge Format, to improve LLM usage efficiency
+    technologies:
+      - Java
+      - Spring
+      - Apache Storm
+      - Apache Cassandra
+      - Oracle DB
+      - PostgreSQL
+      - BigQuery
+      - Apache Kafka
+      - Kubernetes
+      - AWS
+      - Terraform
+      - Ansible
+
   - position: Senior Backend Engineer
     company: BEELINE
     location: Remote
