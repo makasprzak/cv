@@ -355,7 +355,7 @@
     <script>
         async function loadCV() {
             try {
-                const response = await fetch('cv_us.yaml');
+                const response = await fetch('cv_us.yaml', { cache: 'no-store' });
                 const yamlText = await response.text();
                 const data = jsyaml.load(yamlText);
                 renderCV(data);

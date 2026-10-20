@@ -376,7 +376,7 @@
         async function loadCV() {
             try {
                 const cvFile = detectLocale();
-                const response = await fetch(cvFile);
+                const response = await fetch(cvFile, { cache: 'no-store' });
                 const yamlText = await response.text();
                 const data = jsyaml.load(yamlText);
                 renderCV(data);
