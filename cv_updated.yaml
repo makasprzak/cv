@@ -1,0 +1,472 @@
+personal_info:
+  name: MACIEJ KASPRZAK
+  title: Senior Back-end Developer with good Front-end skills
+  location: Poland (Remote)
+  phone: +48 509 354 580
+  email: contact@makasprzak.pl
+  github: github.com/makasprzak
+summary: 'Experienced in building and scaling applications, including trace data analyzer platform,
+
+  global travel search engine, enterprise-scale Vendor Management, large-scale telemetry systems and cloud migration initiatives.
+
+  Professional Software Developer since October 2009.
+
+  Programming primarily in Kotlin and Java with strong expertise in distributed systems, cloud-native infrastructure and data
+  processing platforms.
+
+  '
+accomplishments:
+- title: SCALED ENTERPRISE REPORTING FOR A GLOBAL VMS PLATFORM
+  description: 'Led the redesign of a reporting subsystem for a large-scale Vendor Management System
+
+    serving enterprise clients with tens to hundreds of thousands of users (including AstraZeneca
+
+    and DoorDash). Transformed an unstable, memory-intensive request/response export mechanism
+
+    into a fully resilient, job-based and streaming architecture capable of handling large data
+
+    exports reliably with minimal memory footprint. The redesigned solution supports flexible
+
+    report configuration including column selection, reordering and renaming, and was introduced
+
+    incrementally over several months with zero disruption to end users. The implementation
+
+    emphasizes code reuse, high automated test coverage and long-term maintainability.
+
+    '
+  technologies:
+  - Kotlin
+  - Java
+  - Spring
+  - PostgreSQL
+  - Kafka
+  - ActiveMQ
+  - Kubernetes
+  - GraphQL
+- title: CREATED A TELECOMMUNICATIONS TRACE DATA ANALYZER PLATFORM FOR NOKIA
+  description: 'Created a system capable of processing and persisting thousands of telecommunications trace
+
+    messages per second. Efficient use of the Clickhouse columnar database allows to return
+
+    analytic reports of tens of millions of messages within seconds while ensuring high data
+
+    compression rate.
+
+    '
+  technologies:
+  - Java
+  - JavaScript
+  - Python
+  - Go Lang
+  - Spring
+  - React
+  - Kubernetes
+  - Apache Spark
+  - Apache Kafka
+  - Clickhouse
+  - MariaDB
+- title: CREATED A SUPPORT CENTER CMS FOR A LEADING BEVERAGES MANUFACTURER
+  description: 'Created a content management system for a Support Center of a leading beverages manufacturer
+
+    located in USA. The system allows authorized users to manage articles related to company''s
+
+    products and publish them in a highly scalable and performant Elasticsearch based web service.
+
+    '
+  technologies:
+  - AWS
+  - Java 8
+  - Spring Boot
+  - Guice
+  - RxJava
+  - Elasticsearch
+  - MySQL
+  - Docker
+  - Node.js
+- title: DESIGNED THE BACK-END ARCHITECTURE FOR A LARGE TRAVEL SEARCH ENGINE
+  description: 'Designed the back-end architecture for a complex travel search site that compares numerous
+
+    European travel services to produce trip results consisting of flights, trains and buses.
+
+    The implemented solution minimizes the query rate to external services using sophisticated
+
+    caching strategies and machine learning. It also ensures modularity by applying the
+
+    microservices approach.
+
+    '
+  technologies:
+  - Java 8
+  - Guice
+  - RxJava
+  - Kafka
+  - gRPC
+  - Docker
+experience:
+- position: SENIOR SOFTWARE ENGINEER / CLOUD MIGRATION CONSULTANT
+  company: EQUINIX (CONTRACT)
+  location: Remote
+  period: Apr 2026 – Present
+  description: Senior software engineer contributing to the migration of a large-scale telemetry data collection platform
+    from on-premise infrastructure to AWS. Focused primarily on migrating and modernizing Apache Storm-based data processing
+    components while also contributing to Kubernetes-deployed services, Apache Spark and Flink workloads, and Cassandra-related
+    changes within a complex distributed ecosystem.
+  achievements:
+  - Migrating Apache Storm-based telemetry processing workloads from on-prem infrastructure to AWS.
+  - Contributing to modernization and cloud migration of Kubernetes-deployed services and distributed data processing components.
+  - Working across a heterogeneous distributed data platform involving Apache Storm, Spark, Flink and Cassandra.
+  - Collaborating within a large Java-based codebase to ensure reliable migration and operational continuity.
+  technologies:
+  - Java
+  - AWS
+  - Kubernetes
+  - Apache Storm
+  - Apache Spark
+  - Apache Flink
+  - Cassandra
+- position: SENIOR BACK-END DEVELOPER
+  company: BEELINE
+  location: Remote
+  period: Feb 2023 – Feb 2026
+  responsibilities_note: Technical Leadership responsibilities
+  description: 'Senior back-end engineer and technical lead on a large-scale Vendor Management System
+
+    used by global enterprise clients (10k–100k+ users).
+
+    '
+  achievements:
+  - Redesigned reporting and export capabilities from a memory-heavy synchronous model into a resilient, asynchronous, streaming
+    architecture enabling reliable large-scale exports.
+  - Designed an event-driven anomalies engine with configurable SpEL-based business rules.
+  - Improved performance and stability across the platform.
+  - As a technical leader acted as the team's accountable owner and primary contact, ensuring coordination and engineering
+    quality while empowering experienced engineers.
+  technologies:
+  - Kotlin
+  - Java
+  - Spring
+  - PostgreSQL
+  - Kafka
+  - ActiveMQ
+  - Kubernetes
+  - GraphQL
+  - React
+- position: FULL STACK DEVELOPER
+  company: BUNGE
+  location: Warsaw (remotely), Poland
+  period: Oct 2022 - Jan 2023
+  description: 'A senior full stack developer working within a scrum team that builds an analytical
+
+    platform to help grain market specialists accessing their data more efficiently.
+
+    '
+  achievements:
+  - Implemented a flexible user interface solution of presenting multidimensional data as tabular worksheets
+  - Added multiple improvements and fixes
+  technologies:
+  - Java 17
+  - JavaScript
+  - GraphQL
+  - Spring
+  - Vue.js
+  - AWS ECS
+  - Postgres
+- position: FULL STACK DEVELOPER
+  company: NOKIA
+  location: Wrocław, Poland (via Sii Polska)
+  period: 2021 - Sep 2022, 2019 - 2020
+  description: 'A senior full stack developer working with a team to create a highly performing online
+
+    analytics solution for telecommunications trace data. Playing a major role in the architecture
+
+    design, analyzing functional requirements, proposing and implementing improvements and
+
+    optimizing performance to meet high requirements with limited resources available.
+
+    '
+  achievements:
+  - Created Apache Spark Structured Streaming based data processing pipeline
+  - Created Clickhouse columnar database based API
+  - Created React based User Interface application
+  - Implemented automatic data removal mechanism to avoid storage overflow
+  - Proposed and implemented number of Clickhouse query optimizations
+  technologies:
+  - Java
+  - JavaScript
+  - Python
+  - Go Lang
+  - Spring
+  - React
+  - Kubernetes
+  - Apache Spark
+  - Apache Kafka
+  - Clickhouse
+  - MariaDB
+- position: SOFTWARE DEVELOPER
+  company: OCADO
+  location: Wrocław, Poland
+  period: 2020 - 2021
+  description: 'Software Developer working with a team on development and maintenance of a unified
+
+    application deployment and management platform the purpose of which is to help other
+
+    teams focus on the business requirements and not duplicate effort on keeping high
+
+    security standards.
+
+    '
+  achievements:
+  - Implemented a powerful Elasticsearch based fuzzy search solution
+  - Introduced contract testing approach with use of Pact
+  - Added several CI pipelines improvements
+  technologies:
+  - Java
+  - Python
+  - Spring
+  - Elasticsearch
+  - PostgreSQL
+  - AWS (ECS, CloudFormation, DynamoDB, CloudWatch, SQS, SNS)
+- position: RUBY ON RAILS DEVELOPER
+  company: SOFOMO (www.primexinc.com)
+  location: Wrocław, Poland
+  period: 2018 - 2019
+  description: 'A senior back-end developer working with a team of back-end and front-end developers
+
+    to maintain and develop an Internet of Things platform, analysing functional requirements,
+
+    investigating performance problems, proposing and implementing improvements.
+
+    '
+  achievements:
+  - Implemented support for new family of devices including remote configuration management and state monitoring
+  - Implemented Python utility to simulate devices that communicate with the system to improve testing
+  - Optimized sensor readings processing pipeline completely removing holdups that previously have been occurring multiple
+    times per day
+  - Analysed sensor readings processing algorithm implementation with use of profiling tools and proposed performance improvements
+    estimated to provide more than 60% performance gain.
+  - Helped the team starting using Scrum Framework by running a Scrum training at client office in Wisconsin and continuously
+    advising on proper Scrum usage
+  technologies:
+  - Ruby 2.1
+  - Rails 4.1
+  - Python
+  - Java
+  - Docker
+  - PostgreSQL
+  - AWS DynamoDB
+  - AWS Kinesis
+  - AWS SQS
+- position: JAVA DEVELOPER
+  company: SOFOMO (CLIENT IS A LEADING BEVERAGES MANUFACTURER)
+  location: Wrocław, Poland
+  period: 2018
+  description: 'A senior back-end developer and team technical leader responsible for designing complete
+
+    end-to-end architecture, analysing functional requirements, helping the Product Owner
+
+    build and maintain the Product Backlog, implementing majority of the back-end code and
+
+    coordinating work of the rest of the team that includes back-end and front-end developers
+
+    and AWS specialists.
+
+    '
+  achievements:
+  - Designed complete system architecture. Responsibilities include choosing tools and services best suited for the requirements.
+  - Provided technical documentation and estimated the work needed to complete the system implementation.
+  - Implemented majority of the back-end code that is mostly Spring Boot based, but includes also Google Guice based or Node.js
+    components.
+  - Provided high level of automated test coverage. Because of microservice nature of the architecture, these are mostly integration
+    tests utilising Docker to virtualize the system in local environment.
+  - Worked with AWS specialist to ensure proper solution deployment into AWS environment and to build successful CI and CD
+    pipelines.
+  technologies:
+  - AWS
+  - Java 8
+  - Spring Boot
+  - Guice
+  - RxJava
+  - Elasticsearch
+  - MySQL
+  - Docker
+  - Node.js
+- position: JAVA DEVELOPER
+  company: PGS SOFTWARE (CLIENT IS A YELLOW PAGES COMPANY)
+  location: Wrocław, Poland
+  period: 2017
+  description: 'A senior back-end developer and team technical leader working with a team of Java
+
+    Developers to create a Chat Bot functionality for a yellow pages company located in UK.
+
+    '
+  achievements:
+  - Designed AWS architecture for the solution
+  - Implemented Dialogflow (formerly API.AI) Fulfillment Service
+  - Integrated Facebook chat, Twitter and Amazon Alexa.
+  - Built usage analytics module able to track the bot ability to correctly address user intents.
+  - Handled the part-time Scrum Master role for the team.
+  technologies:
+  - Java 8
+  - Docker
+  - Spring Boot
+  - Elasticsearch
+  - Node.js
+- position: JAVA DEVELOPER
+  company: PGS SOFTWARE (CLIENT IS A POPULAR TRAVEL SITE)
+  location: Wrocław, Poland
+  period: 2015 - 2016
+  description: 'A senior back-end developer responsible for rewriting the entire application and
+
+    maintaining the back-end for the old legacy application.
+
+    '
+  achievements:
+  - Redesigned the entire back-end architecture. Responsibilities include defining the various back-end components and the
+    boundaries of each component.
+  - Implemented the base layer code for the application rewrite. This work handles users search requests, passes them onto
+    external providers and collects and consolidates the results.
+  - Created an end-to-end acceptance testing framework using Cucumber and Docker.
+  - Implemented a component for the legacy system that is responsible for filling the gaps between user departure/arrival
+    points and actual departure/arrival points of a train, bus or flight.
+  - Worked towards increasing the general quality of the legacy system.
+  - Handled the part-time Scrum Master role for the team.
+  technologies:
+  - Java 8
+  - Guice
+  - RxJava
+  - Kafka
+  - gRPC
+  - Docker
+  - Spring
+  - MySql
+  - Couchbase
+  - Elasticsearch
+  - Apache Lucene
+- position: JAVA DEVELOPER
+  company: PGS SOFTWARE (CLIENT SELLS FINANCIAL SOFTWARE)
+  location: Wrocław, Poland
+  period: 2014 – 2015
+  description: Developed and maintained a large system for a financial software product.
+  achievements:
+  - Investigated and solved multiple problems in an Apache Camel/jBPM based component that is responsible for processing SwiftNet
+    events.
+  - Improved unit test coverage in multiple modules.
+  - Performed root cause analysis and solved many problems in a Hibernate/Spring/ JSF based application responsible for investment
+    funds management.
+  - Implemented a module responsible for processing of automated payments including both back-end and front-end layers (AngularJS,
+    CXF, Spring, Hibernate).
+  technologies:
+  - Java
+  - Javascript
+  - Sybase
+  - MySql
+  - Apache Camel
+  - jBPM
+  - Spring
+  - JSF
+  - AngularJS
+  - Hibernate
+  - ActiveMQ
+- position: JAVA DEVELOPER
+  company: PGS SOFTWARE (CLIENT IS AN ADVERTISING PLATFORM)
+  location: Wrocław, Poland
+  period: 2014
+  description: 'Worked as part of an engineering team that was responsible for developing an online
+
+    advertising solution hosted in Amazon Web Services.
+
+    '
+  achievements:
+  - Created a CMS component exposing Restful API for a web based front-end using Spring (MVC, Data-JPA) and PostgreSQL
+  - Created a service responsible for providing statistical information on application usage using Apache Storm and ElasticSearch.
+  - Helped develop a component exposing Restful API for end-user applications (Android, iOS, desktop) using Spring and Solr.
+  technologies:
+  - Java 8
+  - Spring Boot
+  - JPA
+  - RxJava
+  - Apache Storm
+  - PostgreSQL
+  - Solr
+  - Elasticsearch
+  - RabbitMQ
+  - Amazon Web Services
+- position: JAVA DEVELOPER
+  company: CREDIT SUISSE (via Luxoft)
+  location: Wrocław, Poland
+  period: DEC 2013 - FEB 2014
+  description: 'Worked as part of a distributed team (New York, London, Wrocław - Poland, Pune - India & Singapore)
+
+    on a small component of Credit Suisse''s Market Risk platform.
+
+    '
+  achievements:
+  - Implemented a service that exposes the SOAP API for a Silverlight based frontend, using EJB, JPA, JAXB, JAX-WS, Weblogic
+    and Oracle
+  technologies:
+  - Java
+  - Oracle DB
+  - Spring
+  - OBPM
+  - JPA
+  - JAX-WS
+  - WebLogic
+- position: JAVA DEVELOPER
+  company: EUROSTAT (via Atos)
+  location: Wrocław, Poland
+  period: FEB - NOV 2013
+  description: 'Developed and maintained multiple statistical data applications for Eurostat,
+
+    the statistical office of the European Union
+
+    '
+  achievements:
+  - Developed a Swing based desktop application used for statistical data management.
+  - Prepared effort estimations for a Struts based web application that is used for exposing public Eurostat data.
+  technologies:
+  - Java
+  - Oracle DB
+  - Swing
+  - Guice
+  - Spring
+  - Struts
+  - WebLogic
+- position: JAVA DEVELOPER
+  company: TIETO, NOKIA SIEMENS NETWORKS
+  location: Wrocław, Poland
+  period: 2009 - 2013
+  description: 'Worked as part of multi-scrum team responsible for maintaining and developing a mobile
+
+    network configuration management system.
+
+    '
+  achievements:
+  - Developed a large distributed system utilizing the following technologies Websphere, Oracle, EJB, Swing and CORBA.
+  - Resolved a major issue that allowed an important South American customer to upgrade their network software.
+  - Served as Scrum Master for a team of developers. Moderated Scrum sessions and ensured that all deliverables were completed
+    on time.
+  technologies:
+  - Java
+  - Python
+  - Oracle DB
+  - EJB 2.0
+  - Swing
+  - Spring
+  - WebLogic
+education:
+- degree: ELECTRONICS & TELECOMMUNICATION MASTERS PROGRAM
+  institution: Wrocław University of Technology
+  period: 2002 - 2008
+  thesis:
+    title: Measurement of D/A and A/D Audio Converters in a Didactic Laboratory
+    description: 'Created a laboratory station where young students can learn how to measure Digital to
+
+      Analog and Analog to Digital audio converters. During the class, students would execute
+
+      chosen measurements according to appropriate standards using advanced instrumentation.
+
+      The master thesis also included Visual Basic software for fully automated measurements
+
+      of converters according to mentioned standards.
+
+      '
